@@ -146,7 +146,8 @@ public class Calculator implements ActionListener
         {
             n1 = Double.parseDouble(txtField1.getText());
             n2 = Double.parseDouble(txtField2.getText());
-        } catch (NumberFormatException e2)
+        }
+        catch (NumberFormatException e2)
         {
             resultLabel.setText("Result = Error");
             return;
@@ -184,20 +185,24 @@ public class Calculator implements ActionListener
         {
             n3 = n1 + n2;
             resultLabel.setText("Result = " + n3);
-        } else if (opt.equals("SUB"))
+        }
+        else if (opt.equals("SUB"))
         {
             n3 = n1 - n2;
             resultLabel.setText("Result = " + n3);
-        } else if (opt.equals("MULT"))
+        }
+        else if (opt.equals("MULT"))
         {
             n3 = n1 * n2;
             resultLabel.setText("Result = " + n3);
-        } else if (opt.equals("DIV"))
+        }
+        else if (opt.equals("DIV"))
         {
             if (n2 == 0)
             {
                 resultLabel.setText("Result = Error");
-            } else
+            }
+            else
             {
 
                 n3 = n1 / n2;
